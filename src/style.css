@@ -1,7 +1,33 @@
 @import "tailwindcss";
 
+.nav-item {
+  @apply hover:bg-white/10 px-5 py-2 rounded-3xl cursor-pointer duration-400;
+}
 
+.feature-div {
+  @apply flex flex-col gap-5 bg-gray-100 items-center justify-center py-7 px-20 rounded-2xl font-bold shadow-xl shadow-gray-200 cursor-pointer;
+}
 
-.nav-item{
-  @apply hover:bg-white/10 px-5 py-2 rounded-3xl cursor-pointer duration-400
+.feature-div:hover .feature-icon {
+  @apply bg-red-400 duration-300;
+}
+
+.feature-icon {
+  @apply w-20 h-20 flex items-center justify-center bg-blue-500 rounded-full;
+}
+
+.trending-game {
+  @apply flex flex-col gap-5 bg-red-50 rounded-4xl;
+}
+
+.top-game {
+  @apply flex flex-col gap-5 bg-red-50 rounded-4xl;
+}
+
+.category {
+  @apply flex flex-col justify-end items-center overflow-hidden gap-4 pt-4 bg-blue-500 rounded-4xl text-gray-100;
+}
+
+.thumbnail {
+  @apply relative rounded-4xl overflow-hidden;
 }
